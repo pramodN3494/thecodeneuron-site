@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Code Neuron</title>
+    <style>
+        :root {
+            --bg: #0f1724;
+            --card: #0b1220;
+            --accent: #7c3aed;
+            --muted: #9ca3af;
+            color-scheme: dark
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: Inter, Segoe UI, system-ui, Arial, sans-serif;
+            background: linear-gradient(180deg, #071029 0%, #08121a 60%);
+            color: #e6eef8
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 48px auto;
+            padding: 24px
+        }
+
+        .hero {
+            display: flex;
+            gap: 24px;
+            align-items: flex-start
+        }
+
+        .brand {
+                flex: 1
+            }
+            .brand-header{display:flex;align-items:flex-start;gap:12px}
+            .logo{height:192px;width:auto;border-radius:8px}
+
+        h1 {
+            font-size: clamp(28px, 4vw, 44px);
+            margin: 0 0 8px 0
+        }
+        .brand-header > div {
+            margin-top: -4px;
+        }
+
+        p.lead {
+            margin: 0 0 18px;
+            color: var(--muted)
+        }
+
+        .cta {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            padding: 18px;
+            border-radius: 12px
+        }
+
+        .hero > .card {
+            margin-top: 40px
+        }
+
+        .projects {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 14px
+        }
+
+        .project-title {
+            margin: 0 0 6px
+        }
+
+        footer {
+            margin-top: 40px;
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        @media(min-width:760px) {
+            .hero {
+                align-items: flex-start
+            }
+
+            .projects {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+        @media(max-width:520px) {
+            .logo {height:112px}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="brand">
+                <div class="brand-header">
+                    <img src="assets/logo-code-neuron.png" alt="The Code Neuron logo" class="logo" />
+                    <div>
+                        <h1>The Code Neuron</h1>
+                        <p class="lead">Building practical software, AI tools, and developer solutions.</p>
+                    </div>
+                </div>
+                <a class="cta" href="#projects">See current project</a>
+            </div>
+            <div class="card" aria-hidden="true">
+                <strong>Focus</strong>
+                <div style="margin-top:8px;color:var(--muted)">Consulting, Open-source, and AI-driven developer tools.
+                </div>
+            </div>
+        </header>
+
+        <section id="projects" class="projects">
+            <article class="card">
+                <h3 class="project-title">EstiMind</h3>
+                <p style="margin:0;color:var(--muted)">Don't just estimate stories — capture the intelligence behind the
+                    estimate.</p>
+                <p style="margin-top:12px;font-weight:600;color:var(--accent)">Coming soon.</p>
+            </article>
+
+            <article class="card">
+                <h3 class="project-title">Get In Touch</h3>
+                <div style="margin-top:10px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+                    <a href="mailto:jondhalepramod5486@gmail.com" style="color:var(--muted);text-decoration:none">Email</a>
+                    <a href="https://www.linkedin.com/in/pramod-jondhale-65b1a7110/" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:var(--muted);text-decoration:none">LinkedIn</a>
+                    <a href="https://github.com/pramodN3494" target="_blank" rel="noopener" aria-label="GitHub" style="color:var(--muted);text-decoration:none">GitHub</a>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <div class="muted">© The Code Neuron — Crafted with focus on developer productivity.</div>
+        </footer>
+    </div>
+</body>
+
+</html>

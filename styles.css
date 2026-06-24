@@ -323,7 +323,8 @@ body {
     justify-content: center;
 }
 
-.btn-icon svg {
+.btn-icon svg,
+.btn-icon-svg {
     width: 16px;
     height: 16px;
     display: block;
@@ -612,5 +613,100 @@ body {
 
     .hero-panel {
         min-height: 420px;
+    }
+}
+
+/* Projects page specific */
+.page-hero .hero-copy h1 {
+    font-size: 2.2rem;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text);
+    margin: 8px 0 18px;
+}
+
+.current-project-section {
+    margin-top: 28px;
+}
+
+.current-project-card .project-card {
+    padding: 26px;
+    min-height: auto;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+}
+
+.projects-grid {
+    margin-top: 30px;
+}
+
+.projects-grid .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+/* Popup that appears on hover/focus */
+.project-card {
+    position: relative;
+    overflow: visible;
+}
+
+.card-popup {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: calc(100% - 6px);
+    background: var(--surface-strong);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transform: translateY(-6px);
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 180ms ease, transform 180ms ease, visibility 180ms;
+    z-index: 40;
+    max-width: 520px;
+}
+
+.card-popup h4 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+}
+
+.project-card:hover .card-popup,
+.project-card:focus-within .card-popup,
+.project-card:focus .card-popup,
+.feature-card:hover .card-popup,
+.feature-card:focus-within .card-popup,
+.feature-card:focus .card-popup,
+.post-card:hover .card-popup,
+.post-card:focus-within .card-popup,
+.post-card:focus .card-popup {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* Keep popup visible when hovering over it to avoid flicker when moving mouse */
+.card-popup:hover {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Ensure popup remains usable on small screens (stacked) */
+@media (max-width: 620px) {
+    .card-popup {
+        position: static;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        margin-top: 12px;
     }
 }

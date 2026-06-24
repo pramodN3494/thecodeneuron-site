@@ -44,8 +44,25 @@
                         about
                         enterprise software and emerging technologies.</p>
                     <div class="hero-actions">
-                        <a class="primary" href="#projects">Explore Projects</a>
-                        <a class="secondary" href="#blog">Read Blog</a>
+                        <a class="primary" href="#projects">Explore Projects
+                            <span class="btn-icon btn-icon--arrow" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img">
+                                    <path d="M5 12h14M13 5l6 7-6 7" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a class="secondary" href="#blog">Read Blog
+                            <span class="btn-icon btn-icon--doc" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                                        stroke="currentColor" stroke-width="1.2" fill="none" stroke-linejoin="round" />
+                                    <path d="M14 2v6h6" stroke="currentColor" stroke-width="1.2" fill="none"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
                     </div>
                 </div>
 
@@ -72,28 +89,68 @@
 
             <section class="feature-cards" id="projects">
                 <article class="feature-card">
-                    <a href="#projects">
+                    <div class="feature-card__icon feature-card__icon--projects" aria-hidden="true">
+                        <svg class="feature-card__emoji" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            role="img" aria-label="code">
+                            <polyline points="15 6 9 12 15 18" stroke="currentColor" stroke-width="2" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <a class="feature-card__content" href="#projects">
                         <h3>Projects</h3>
                         <p>AI tools, automation, and enterprise-grade solutions built with clean code.</p>
                     </a>
+                    <a class="feature-card__cta feature-card__cta--purple" href="#projects">View Projects →</a>
                 </article>
+
                 <article class="feature-card">
-                    <a href="#blog">
+                    <div class="feature-card__icon feature-card__icon--blog" aria-hidden="true">
+                        <svg class="feature-card__emoji" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            role="img" aria-label="write">
+                            <path
+                                d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.77 3.77 1.81-1.85z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
+                    <a class="feature-card__content" href="#blog">
                         <h3>Blog</h3>
                         <p>Tutorials, deep dives, and insights on AI, SAP Commerce, cloud, and more.</p>
                     </a>
+                    <a class="feature-card__cta feature-card__cta--green" href="#blog">Read Articles →</a>
                 </article>
+
                 <article class="feature-card">
-                    <a href="#knowledge">
+                    <div class="feature-card__icon feature-card__icon--kb" aria-hidden="true">
+                        <svg class="feature-card__emoji" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            role="img" aria-label="book">
+                            <path
+                                d="M3 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13a1 1 0 0 1-1.343.938A5.5 5.5 0 0 0 12 17.5a5.5 5.5 0 0 0-6.657 1.438A1 1 0 0 1 4 19V5z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
+                    <a class="feature-card__content" href="#knowledge">
                         <h3>Knowledge Base</h3>
                         <p>Curated notes, guides, and cheatsheets from my learning journey.</p>
                     </a>
+                    <a class="feature-card__cta feature-card__cta--orange" href="#knowledge">Explore KB →</a>
                 </article>
+
                 <article class="feature-card">
-                    <a href="https://github.com/pramodN3494" target="_blank" rel="noopener">
+                    <div class="feature-card__icon feature-card__icon--github" aria-hidden="true">
+                        <svg class="feature-card__emoji" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            role="img" aria-label="github">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.166 6.84 9.49.5.09.68-.216.68-.48 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.342-3.369-1.342-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.607.069-.607 1.004.07 1.532 1.032 1.532 1.032.892 1.528 2.341 1.087 2.91.832.091-.647.35-1.087.636-1.337-2.22-.253-4.555-1.11-4.555-4.944 0-1.09.39-1.98 1.03-2.675-.103-.253-.447-1.27.098-2.646 0 0 .84-.27 2.75 1.025A9.563 9.563 0 0 1 12 6.844c.85.004 1.705.115 2.505.338 1.91-1.296 2.75-1.025 2.75-1.025.546 1.377.202 2.394.1 2.647.64.695 1.03 1.585 1.03 2.675 0 3.842-2.337 4.687-4.566 4.935.36.31.68.92.68 1.852 0 1.336-.012 2.415-.012 2.744 0 .266.18.576.688.478A10.013 10.013 0 0 0 22 12c0-5.52-4.48-10-10-10z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
+                    <a class="feature-card__content" href="https://github.com/pramodN3494" target="_blank"
+                        rel="noopener">
                         <h3>GitHub</h3>
                         <p>Open-source projects and a growing collection of developer resources.</p>
                     </a>
+                    <a class="feature-card__cta feature-card__cta--blue" href="https://github.com/pramodN3494"
+                        target="_blank" rel="noopener">View on GitHub →</a>
                 </article>
             </section>
         </main>

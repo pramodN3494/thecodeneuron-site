@@ -82,9 +82,25 @@ body {
     transition: color 0.2s ease;
 }
 
+.nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 160ms ease, text-decoration-color 160ms ease, transform 160ms ease;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
 .nav a:hover,
 .nav a.active {
     color: var(--text);
+    text-decoration: underline;
+}
+
+.nav a:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.12);
+    border-radius: 6px;
 }
 
 .button {
@@ -104,6 +120,11 @@ body {
 .button:hover {
     transform: translateY(-1px);
     box-shadow: 0 24px 54px rgba(124, 58, 237, 0.32);
+}
+
+.button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 6px rgba(124, 58, 237, 0.14), 0 24px 54px rgba(124, 58, 237, 0.28);
 }
 
 .hero {
@@ -199,6 +220,7 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 12px;
     min-width: 170px;
     border-radius: 999px;
     padding: 14px 22px;
@@ -294,6 +316,48 @@ body {
     color: var(--text);
 }
 
+/* Button icon container */
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-icon svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+    color: currentColor;
+}
+
+/* Primary button arrow */
+.btn-icon--arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    color: white;
+}
+
+/* Secondary button doc icon */
+.btn-icon--doc {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: var(--muted);
+}
+
+.hero-actions a:hover .btn-icon--arrow {
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.hero-actions a:hover .btn-icon--doc {
+    border-color: rgba(255, 255, 255, 0.12);
+    color: var(--text);
+}
+
 .feature-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -331,6 +395,125 @@ body {
     color: var(--muted);
     line-height: 1.75;
     font-size: 0.95rem;
+}
+
+.feature-card {
+    position: relative;
+    padding: 36px 28px 36px;
+}
+
+.feature-card__icon {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.feature-card__emoji {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.feature-card__emoji svg,
+.feature-card__emoji {
+    width: 20px;
+    height: 20px;
+}
+
+.feature-card__content {
+    display: block;
+    padding-left: 80px;
+}
+
+.feature-card__cta {
+    display: inline-flex;
+    gap: 8px;
+    margin-top: 18px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.feature-card__cta--purple {
+    color: var(--accent);
+}
+
+.feature-card__cta--green {
+    color: #10b981;
+}
+
+.feature-card__cta--orange {
+    color: #fb923c;
+}
+
+.feature-card__cta--blue {
+    color: #3b82f6;
+}
+
+.feature-card__icon--projects {
+    background: linear-gradient(135deg, var(--accent), var(--accent-alt));
+}
+
+.feature-card__icon--blog {
+    background: linear-gradient(135deg, #059669, #10b981);
+}
+
+.feature-card__icon--kb {
+    background: linear-gradient(135deg, #f97316, #fb923c);
+}
+
+.feature-card__icon--github {
+    background: linear-gradient(135deg, #2563eb, #60a5fa);
+}
+
+.feature-card a:hover .feature-card__cta {
+    text-decoration: underline;
+}
+
+/* Link hover / focus styles (CTAs and card content) */
+.feature-card__cta {
+    transition: color 160ms ease, transform 140ms ease, text-decoration-color 160ms ease;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+.feature-card__cta:hover {
+    transform: translateY(-3px);
+    text-decoration: underline;
+}
+
+.feature-card__cta:focus-visible,
+.feature-card__content:focus-visible,
+.feature-card a:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.12);
+    border-radius: 8px;
+}
+
+.feature-card__content h3 {
+    transition: color 160ms ease;
+}
+
+.feature-card__content:hover h3 {
+    color: #c4b5fd;
+}
+
+/* Hero buttons: subtle underline on secondary and stronger contrast on hover */
+.hero-actions a {
+    transition: transform 0.18s ease, box-shadow 0.18s ease, color 0.18s ease, background 0.18s ease;
+}
+
+.hero-actions .secondary:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 .footer {

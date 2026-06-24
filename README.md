@@ -69,23 +69,6 @@ It does **not** host the website.
 
 ---
 
-# Repository Structure
-
-```text
-thecodeneuron-site/
-│
-├── README.md
-├── docs/
-│   └── setup-and-deployment.md
-│
-├── public/
-├── src/
-│
-└── Future
-    ├── estimind/
-    └── blog/
-```
-
 ---
 
 # Vercel Project Setup

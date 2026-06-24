@@ -5,148 +5,101 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Code Neuron</title>
-    <style>
-        :root {
-            --bg: #0f1724;
-            --card: #0b1220;
-            --accent: #7c3aed;
-            --muted: #9ca3af;
-            color-scheme: dark
-        }
-
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            font-family: Inter, Segoe UI, system-ui, Arial, sans-serif;
-            background: linear-gradient(180deg, #071029 0%, #08121a 60%);
-            color: #e6eef8
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 48px auto;
-            padding: 24px
-        }
-
-        .hero {
-            display: flex;
-            gap: 24px;
-            align-items: flex-start
-        }
-
-        .brand {
-                flex: 1
-            }
-            .brand-header{display:flex;align-items:flex-start;gap:12px}
-            .logo{height:192px;width:auto;border-radius:8px}
-
-        h1 {
-            font-size: clamp(28px, 4vw, 44px);
-            margin: 0 0 8px 0
-        }
-        .brand-header > div {
-            margin-top: -4px;
-        }
-
-        p.lead {
-            margin: 0 0 18px;
-            color: var(--muted)
-        }
-
-        .cta {
-            display: inline-block;
-            background: var(--accent);
-            color: white;
-            padding: 10px 16px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 600
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            padding: 18px;
-            border-radius: 12px
-        }
-
-        .hero > .card {
-            margin-top: 40px
-        }
-
-        .projects {
-            margin-top: 20px;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 14px
-        }
-
-        .project-title {
-            margin: 0 0 6px
-        }
-
-        footer {
-            margin-top: 40px;
-            color: var(--muted);
-            font-size: 14px
-        }
-
-        @media(min-width:760px) {
-            .hero {
-                align-items: flex-start
-            }
-
-            .projects {
-                grid-template-columns: repeat(2, 1fr)
-            }
-        }
-        @media(max-width:520px) {
-            .logo {height:112px}
-        }
-    </style>
+    <meta name="description"
+        content="The Code Neuron portfolio: projects, blog, AI experiments, and developer insights." />
+    <meta name="theme-color" content="#050816" />
+    <link rel="icon" href="assets/logo-new.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <div class="container">
-        <header class="hero">
+    <div class="page">
+        <header class="topbar">
             <div class="brand">
-                <div class="brand-header">
-                    <img src="assets/logo-code-neuron.png" alt="The Code Neuron logo" class="logo" />
-                    <div>
-                        <h1>The Code Neuron</h1>
-                        <p class="lead">Building practical software, AI tools, and developer solutions.</p>
-                    </div>
-                </div>
-                <a class="cta" href="#projects">See current project</a>
+                <a href="https://www.thecodeneuron.dev/" aria-label="The Code Neuron homepage">
+                    <img src="assets/logo-new.png" alt="The Code Neuron logo" />
+                </a>
             </div>
-            <div class="card" aria-hidden="true">
-                <strong>Focus</strong>
-                <div style="margin-top:8px;color:var(--muted)">Consulting, Open-source, and AI-driven developer tools.
-                </div>
-            </div>
+
+            <nav class="nav" aria-label="Primary navigation">
+                <a href="#home" class="active" aria-current="page">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#blog">Blog</a>
+                <a href="#knowledge">Knowledge Base</a>
+            </nav>
+
+            <a class="button" href="#projects">See Current Project</a>
         </header>
 
-        <section id="projects" class="projects">
-            <article class="card">
-                <h3 class="project-title">EstiMind</h3>
-                <p style="margin:0;color:var(--muted)">Don't just estimate stories — capture the intelligence behind the
-                    estimate.</p>
-                <p style="margin-top:12px;font-weight:600;color:var(--accent)">Coming soon.</p>
-            </article>
-
-            <article class="card">
-                <h3 class="project-title">Get In Touch</h3>
-                <div style="margin-top:10px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
-                    <a href="mailto:jondhalepramod5486@gmail.com" style="color:var(--muted);text-decoration:none">Email</a>
-                    <a href="https://www.linkedin.com/in/pramod-jondhale-65b1a7110/" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:var(--muted);text-decoration:none">LinkedIn</a>
-                    <a href="https://github.com/pramodN3494" target="_blank" rel="noopener" aria-label="GitHub" style="color:var(--muted);text-decoration:none">GitHub</a>
+        <main>
+            <section class="hero" id="home">
+                <div class="hero-copy">
+                    <div class="eyebrow">Engineer. Builder. Learner.</div>
+                    <h1>
+                        <span>Ship Fast.</span>
+                        <span>Scale Smarter.</span>
+                        <span class="highlight">Think Neural.</span>
+                    </h1>
+                    <p>Projects, technical writing, AI experiments, and developer insights from a builder passionate
+                        about
+                        enterprise software and emerging technologies.</p>
+                    <div class="hero-actions">
+                        <a class="primary" href="#projects">Explore Projects</a>
+                        <a class="secondary" href="#blog">Read Blog</a>
+                    </div>
                 </div>
-            </article>
-        </section>
 
-        <footer>
-            <div class="muted">© The Code Neuron — Crafted with focus on developer productivity.</div>
+                <div class="hero-panel">
+                    <img src="assets/code-neuron-hero-banner.png" alt="The Code Neuron hero banner" />
+                </div>
+            </section>
+
+            <section class="current-projects">
+                <div class="current-projects__header">
+                    <div class="current-projects__tag">Current project</div>
+                </div>
+                <div class="current-projects__list">
+                    <article class="project-card">
+                        <a class="project-card__link" href="#estimind">
+                            <h2>EstiMind</h2>
+                        </a>
+                        <p class="project-card__description">Don't just estimate stories — capture the intelligence
+                            behind the estimate.</p>
+                        <p class="project-card__status">Coming soon.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="feature-cards" id="projects">
+                <article class="feature-card">
+                    <a href="#projects">
+                        <h3>Projects</h3>
+                        <p>AI tools, automation, and enterprise-grade solutions built with clean code.</p>
+                    </a>
+                </article>
+                <article class="feature-card">
+                    <a href="#blog">
+                        <h3>Blog</h3>
+                        <p>Tutorials, deep dives, and insights on AI, SAP Commerce, cloud, and more.</p>
+                    </a>
+                </article>
+                <article class="feature-card">
+                    <a href="#knowledge">
+                        <h3>Knowledge Base</h3>
+                        <p>Curated notes, guides, and cheatsheets from my learning journey.</p>
+                    </a>
+                </article>
+                <article class="feature-card">
+                    <a href="https://github.com/pramodN3494" target="_blank" rel="noopener">
+                        <h3>GitHub</h3>
+                        <p>Open-source projects and a growing collection of developer resources.</p>
+                    </a>
+                </article>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-left">© The Code Neuron — Crafted with focus on developer productivity.</div>
         </footer>
     </div>
 </body>

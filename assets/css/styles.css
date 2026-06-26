@@ -475,6 +475,27 @@ body {
     background: linear-gradient(135deg, #2563eb, #60a5fa);
 }
 
+.feature-card__icon--connect {
+    background: linear-gradient(135deg, #0ea5e9, #14b8a6);
+}
+
+.feature-card__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 80px;
+    margin-top: 18px;
+}
+
+.feature-card__actions.footer-icons {
+    flex-direction: row;
+    align-items: center;
+}
+
+.feature-card__actions .feature-card__cta {
+    margin-top: 0;
+}
+
 .feature-card a:hover .feature-card__cta {
     text-decoration: underline;
 }
@@ -568,6 +589,31 @@ body {
     fill: currentColor;
 }
 
+.about-story p+p {
+    margin-top: 22px;
+}
+
+.about-story .about-connect {
+    margin-top: 26px;
+    margin-bottom: 10px;
+}
+
+.about-story .footer-icons {
+    margin-top: 0;
+}
+
+.about-connect-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 26px;
+}
+
+.about-connect-row .about-connect {
+    margin: 0;
+    white-space: nowrap;
+}
+
 @media (max-width: 1160px) {
     .feature-cards {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -592,6 +638,10 @@ body {
 
     .feature-cards {
         grid-template-columns: 1fr;
+    }
+
+    .about-connect-row {
+        flex-wrap: wrap;
     }
 }
 

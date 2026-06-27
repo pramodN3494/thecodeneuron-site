@@ -6,15 +6,43 @@
   </url>
 
   <url>
-    <loc>https://www.thecodeneuron.dev/projects</loc>
+    <loc>https://www.thecodeneuron.dev/about/</loc>
   </url>
 
   <url>
-    <loc>https://www.thecodeneuron.dev/about</loc>
+    <loc>https://www.thecodeneuron.dev/projects/</loc>
   </url>
 
   <url>
-    <loc>https://www.thecodeneuron.dev/resources</loc>
+    <loc>https://www.thecodeneuron.dev/resources/</loc>
+  </url>
+
+  <url>
+    <loc>https://www.thecodeneuron.dev/contact/</loc>
+  </url>
+
+  <url>
+    <loc>https://www.thecodeneuron.dev/resources/artificial-intelligence/</loc>
+  </url>
+
+  <url>
+    <loc>https://www.thecodeneuron.dev/resources/enterprise-engineering/</loc>
+  </url>
+
+  <url>
+    <loc>https://www.thecodeneuron.dev/resources/workflow-automation/</loc>
+  </url>
+
+  <url>
+    <loc>https://www.thecodeneuron.dev/resources/cloud-devops/</loc>
+  </url>
+
+  <url>
+    <loc>https://www.thecodeneuron.dev/resources/modern-web-development/</loc>
+  </url>
+
+  <url>
+    <loc>https://www.thecodeneuron.dev/resources/data-science/</loc>
   </url>
 
 </urlset>

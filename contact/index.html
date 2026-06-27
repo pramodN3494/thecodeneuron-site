@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — The Code Neuron</title>
+    <meta name="description" content="Contact The Code Neuron for collaboration, engineering, and AI projects." />
+    <meta name="theme-color" content="#050816" />
+    <link rel="icon" href="/assets/images/logo-new.png" type="image/png" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+
+<body>
+    <div class="page">
+        <header class="topbar">
+            <div class="brand">
+                <a href="https://www.thecodeneuron.dev/" aria-label="The Code Neuron homepage">
+                    <img src="/assets/images/logo-new.png" alt="The Code Neuron logo" />
+                </a>
+            </div>
+
+            <nav class="nav" aria-label="Primary navigation">
+                <a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/projects/">Projects</a>
+                <a href="/resources/">Resources</a>
+                <a href="/contact/" class="active" aria-current="page">Contact</a>
+            </nav>
+
+            <a class="button" href="/projects/">See What's New</a>
+        </header>
+
+        <main class="contact-main">
+            <section class="page-hero contact-hero">
+                <div class="hero-copy">
+                    <h1>Contact</h1>
+                    <p class="muted">Let's build something amazing together.</p>
+                    <p class="muted">Whether it's AI, workflow automation, enterprise software, SAP Commerce Cloud,
+                        cloud engineering, or an interesting side project, I'd love to hear from you.</p>
+                </div>
+            </section>
+
+            <section class="contact-layout" aria-label="Contact details and form">
+                <aside class="contact-left" aria-label="Contact information">
+                    <h2>Let's Connect</h2>
+
+                    <div class="contact-info-grid">
+                        <article class="contact-info-card">
+                            <a class="contact-info-card__link"
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=jondhalepramod5486@gmail.com"
+                                target="_blank" rel="noopener" aria-label="Send email to Pramod Jondhale">
+                                <div class="contact-info-card__icon" aria-hidden="true">📧</div>
+                                <h3>Email</h3>
+                                <p>jondhalepramod5486@gmail.com</p>
+                            </a>
+                        </article>
+
+                        <article class="contact-info-card">
+                            <a class="contact-info-card__link"
+                                href="https://www.linkedin.com/in/pramod-jondhale-65b1a7110/" target="_blank"
+                                rel="noopener" aria-label="Open LinkedIn profile">
+                                <div class="contact-info-card__icon" aria-hidden="true">💼</div>
+                                <h3>LinkedIn</h3>
+                                <p>Connect professionally</p>
+                            </a>
+                        </article>
+
+                        <article class="contact-info-card">
+                            <a class="contact-info-card__link" href="https://github.com/pramodN3494" target="_blank"
+                                rel="noopener" aria-label="Open GitHub profile">
+                                <div class="contact-info-card__icon" aria-hidden="true">💻</div>
+                                <h3>GitHub</h3>
+                                <p>Explore my projects</p>
+                            </a>
+                        </article>
+                    </div>
+                </aside>
+
+                <div class="contact-right">
+                    <article class="contact-form-card" aria-label="Contact form">
+                        <h2>Send a Message</h2>
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="contact-form__field">
+                                <label for="fullName">Full Name <span aria-hidden="true">*</span></label>
+                                <input id="fullName" name="fullName" type="text" placeholder="Enter your full name"
+                                    required />
+                            </div>
+
+                            <div class="contact-form__field">
+                                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                                <input id="email" name="email" type="email" placeholder="Enter your email address"
+                                    required />
+                            </div>
+
+                            <div class="contact-form__field">
+                                <label for="subject">Subject <span aria-hidden="true">*</span></label>
+                                <input id="subject" name="subject" type="text"
+                                    placeholder="What would you like to discuss?" required />
+                            </div>
+
+                            <div class="contact-form__field">
+                                <label for="message">Message <span aria-hidden="true">*</span></label>
+                                <textarea id="message" name="message" rows="6"
+                                    placeholder="Share your project idea, question, or collaboration details."
+                                    required></textarea>
+                            </div>
+
+                            <button id="contact-submit" class="button" type="submit">Send Message</button>
+                        </form>
+
+                        <div id="contact-toast" class="contact-toast" role="status" aria-live="polite">
+                        </div>
+                    </article>
+
+                    <article class="contact-collab-card" aria-label="Collaboration call to action">
+                        <h2>Open to Collaboration</h2>
+                        <p>I'm currently exploring AI, Agentic AI, Workflow Automation, Data Science, Cloud
+                            Engineering, SAP Commerce Cloud, and Modern Web Development.</p>
+                        <p>Whether you have an idea, an interesting engineering problem, or simply want to connect,
+                            I'd love to hear from you.</p>
+                        <div class="contact-collab-card__actions">
+                            <a class="button" href="/projects/">View Projects</a>
+                            <a class="button button--ghost" href="https://github.com/pramodN3494" target="_blank"
+                                rel="noopener">GitHub</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-left"><strong>Building the future, one line of code at a time.</strong><br />
+                Crafted with curiosity, passion, and a commitment to continuous learning.<br />
+                © <span class="js-current-year">2026</span> Pramod Jondhale
+            </div>
+        </footer>
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/contact.js"></script>
+</body>
+
+</html>

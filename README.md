@@ -408,16 +408,6 @@ Purpose:
 
 Estimation Intelligence Platform
 
-## Blog
-
-```text
-blog.thecodeneuron.dev
-```
-
-Purpose:
-
-Technical articles and product updates
-
 ## Future Products
 
 ```text

@@ -24,64 +24,147 @@
                 <a href="/">Home</a>
                 <a href="/about/">About</a>
                 <a href="/projects/" class="active" aria-current="page">Projects</a>
-                <a href="/blog/">Blog</a>
-                <a href="/knowledge-base/">Knowledge Base</a>
+                <a href="/resources/">Resources</a>
+                <a href="/contact/">Contact</a>
             </nav>
 
-            <a class="button" href="/projects/">View Current Build</a>
+            <a class="button" href="/projects/">See What's New</a>
         </header>
 
-        <main>
-            <section class="page-hero">
+        <main class="projects-main">
+            <section class="page-hero projects-showcase-hero">
                 <div class="hero-copy">
-                    <h1>Projects</h1>
-                    <p class="muted">AI tools, automation, and enterprise-grade solutions built with clean code.</p>
+                    <p class="projects-showcase-hero__eyebrow">Product Showcase</p>
+                    <p class="muted">Building AI-powered tools, enterprise solutions, automation workflows, and
+                        developer utilities.</p>
+                    <p class="muted">From experiments to production-ready applications, every project is built to solve
+                        real-world problems.</p>
+                    <div class="projects-showcase-hero__stats" aria-label="Project statistics">
+                        <span>🚀 1 Active Project</span>
+                        <span>💡 More Coming Soon</span>
+                    </div>
                 </div>
             </section>
 
-            <section class="current-project-section">
-                <h2 class="section-title">Current Project</h2>
-                <div class="current-project-card">
-                    <article class="project-card" tabindex="0" role="article">
-                        <a class="project-card__link" href="/projects#estimind">
-                            <h2>EstiMind</h2>
-                        </a>
-                        <p class="project-card__description">Don't just estimate stories — capture the intelligence
-                            behind the estimate.</p>
-                        <p class="project-card__status">Coming soon.</p>
+            <section class="featured-project" id="estimind">
+                <article class="featured-project-card" aria-label="Featured project: EstiMind">
+                    <div class="featured-project-card__left">
+                        <p class="featured-project-card__tag">🚀 FEATURED PROJECT</p>
+                        <h2>EstiMind</h2>
+                        <p class="featured-project-card__subtitle">AI-powered Story Estimation Platform</p>
+                        <p class="featured-project-card__description">Capture the intelligence behind every estimate.
+                        </p>
 
-                        <div class="card-popup" aria-hidden="true">
-                            <h4>About EstiMind</h4>
-                            <p>EstiMind helps teams capture context, assumptions, and risk along with story estimates so
-                                planning becomes data-driven and defensible.</p>
-                            <p class="muted">Features: contextual prompts, historical analysis, exportable insights.</p>
+                        <p class="status-pill status-pill--dev">🟡 In Development</p>
+
+                        <div class="featured-project-card__badges" aria-label="EstiMind technology stack">
+                            <span><span class="tech-pill__icon" aria-hidden="true">☕</span>Java</span>
+                            <span><span class="tech-pill__icon" aria-hidden="true">🍃</span>Spring Boot</span>
+                            <span><span class="tech-pill__icon" aria-hidden="true">🤖</span>OpenAI</span>
+                            <span><span class="tech-pill__icon" aria-hidden="true">⚛️</span>React</span>
+                            <span><span class="tech-pill__icon" aria-hidden="true">🐳</span>Docker</span>
+                            <span><span class="tech-pill__icon" aria-hidden="true">☁️</span>AWS</span>
+                        </div>
+
+                        <div class="featured-project-card__progress" aria-label="EstiMind development progress"
+                            style="--project-progress: 10%;">
+                            <div class="featured-project-card__progress-label">
+                                <span>Development Progress</span>
+                                <span>10%</span>
+                            </div>
+                            <div class="featured-project-card__progress-track" role="progressbar" aria-valuemin="0"
+                                aria-valuemax="100" aria-valuenow="10" aria-label="EstiMind development progress">
+                                <span class="featured-project-card__progress-fill"></span>
+                            </div>
+                        </div>
+
+                        <div class="featured-project-card__actions">
+                            <a class="button" href="/projects#estimind">Learn More</a>
+                            <a class="button button--ghost" href="https://github.com/pramodN3494" target="_blank"
+                                rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+
+                    <aside class="featured-project-card__right" aria-label="EstiMind preview panel">
+                        <div class="featured-preview-card">
+                            <p class="featured-preview-card__label">Project Preview</p>
+                            <div class="featured-preview-card__placeholder" aria-hidden="true">
+                                <div class="preview-ui">
+                                    <div class="preview-ui__topbar"></div>
+                                    <div class="preview-ui__kpis">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="preview-ui__chart"></div>
+                                    <div class="preview-ui__rows">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="featured-preview-card__title">Dashboard Preview</p>
+                            <p class="featured-preview-card__meta">UI mockup in progress</p>
+                            <p class="featured-preview-card__coming">Coming Soon</p>
+                        </div>
+                    </aside>
+                </article>
+            </section>
+
+            <section class="projects-roadmap" id="roadmap" aria-label="Project roadmap">
+                <h2 class="section-title">📂 All Projects</h2>
+                <p class="muted projects-roadmap__subtitle">Current and upcoming products I'm building.</p>
+                <div class="projects-roadmap__grid">
+                    <article class="projects-roadmap__item">
+                        <h3>🚀 EstiMind</h3>
+                        <p class="projects-roadmap__subtitle-text">AI-powered Story Estimation Platform</p>
+                        <p>Capture the intelligence behind every estimate.</p>
+                        <span class="status-pill status-pill--dev">🟡 In Development</span>
+                        <div class="featured-project-card__badges" aria-label="EstiMind technology stack">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>OpenAI</span>
+                            <span>React</span>
+                        </div>
+                        <div class="featured-project-card__actions">
+                            <a class="button" href="/projects/#estimind">Learn More</a>
+                        </div>
+                    </article>
+                    <article class="projects-roadmap__item">
+                        <h3>🤖 SEO Audit AI</h3>
+                        <p>Enterprise SEO powered by AI.</p>
+                        <span class="status-pill status-pill--planned">🟣 Coming Soon</span>
+                        <div class="featured-project-card__badges" aria-label="SEO Audit AI technology stack">
+                            <span>OpenAI</span>
+                            <span>Node.js</span>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="featured-project-card__actions">
+                            <a class="button button--ghost" href="/projects/#roadmap">Coming Soon</a>
                         </div>
                     </article>
                 </div>
             </section>
 
-            <section class="projects-grid">
-                <h2 class="section-title">All Projects</h2>
-                <div class="grid">
-                    <article class="project-card" tabindex="0" role="article">
-                        <a class="project-card__link" href="/projects#estimind">
-                            <h3>EstiMind</h3>
-                        </a>
-                        <p class="project-card__description">Capturing the intelligence behind estimates.</p>
-                        <div class="card-popup" aria-hidden="true">
-                            <h4>EstiMind — Details</h4>
-                            <p>Coming soon: a structured approach to story estimation with analytics and annotations.
-                            </p>
-                        </div>
-                    </article>
-                </div>
+            <section class="projects-cta" aria-label="Project collaboration call to action">
+                <h2>Have an idea?</h2>
+                <p>Whether it's AI, automation, enterprise software,
+                    or an interesting side project, I'd love to hear about it. Let's build something amazing together.
+                </p>
+                <a class="button" href="https://www.linkedin.com/in/pramod-jondhale-65b1a7110/" target="_blank"
+                    rel="noopener">Start a Conversation</a>
             </section>
         </main>
 
         <footer class="footer">
-            <div class="footer-left">© The Code Neuron — Crafted with focus on developer productivity.</div>
+            <div class="footer-left"><strong>Building the future, one line of code at a time.</strong><br />
+                Crafted with curiosity, passion, and a commitment to continuous learning.<br />
+                © <span class="js-current-year">2026</span> Pramod Jondhale
+            </div>
         </footer>
     </div>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

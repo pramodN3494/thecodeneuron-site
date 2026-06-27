@@ -5,8 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Code Neuron</title>
-    <meta name="description"
-        content="The Code Neuron portfolio: projects, blog, AI experiments, and developer insights." />
+    <meta name="description" content="The Code Neuron portfolio: projects, AI experiments, and developer insights." />
     <meta name="theme-color" content="#050816" />
     <link rel="icon" href="/assets/images/logo-new.png" type="image/png" />
     <link rel="stylesheet" href="/assets/css/styles.css" />
@@ -25,11 +24,11 @@
                 <a href="/" class="active" aria-current="page">Home</a>
                 <a href="/about/">About</a>
                 <a href="/projects">Projects</a>
-                <a href="/blog">Blog</a>
-                <a href="/knowledge-base/">Knowledge Base</a>
+                <a href="/resources/">Resources</a>
+                <a href="/contact/">Contact</a>
             </nav>
 
-            <a class="button" href="/projects">View Current Build</a>
+            <a class="button" href="/projects">See What's New</a>
         </header>
 
         <main>
@@ -37,15 +36,14 @@
                 <div class="hero-copy">
                     <div class="eyebrow">Engineer. Builder. Learner.</div>
                     <h1>
-                        <span>Ship Fast.</span>
-                        <span class="hero-line--compact">Scale Smarter.</span>
+                        <span>Build Smarter.</span>
+                        <span class="hero-line--compact">Learn Faster.</span>
                         <span class="highlight">Think Neural.</span>
                     </h1>
-                    <p>Projects, technical writing, AI experiments, and developer insights from a builder passionate
-                        about
-                        enterprise software and emerging technologies.</p>
+                    <p>Exploring AI, enterprise engineering, cloud, automation, and modern web development through
+                        real-world projects, technical writing, and continuous learning.</p>
                     <div class="hero-actions">
-                        <a class="primary" href="/projects">Explore Projects
+                        <a class="primary" href="/projects">View Projects
                             <span class="btn-icon btn-icon--arrow" aria-hidden="true">
                                 <svg class="btn-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                                     role="img" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -56,21 +54,56 @@
                             </span>
                         </a>
 
-                        <a class="secondary" href="/blog">Read Blog
-                            <span class="btn-icon btn-icon--doc" aria-hidden="true">
-                                <svg class="btn-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                    role="img" fill="none" stroke="currentColor" stroke-width="1.2"
-                                    stroke-linejoin="round">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                    <path d="M14 2v6h6" />
-                                </svg>
-                            </span>
-                        </a>
                     </div>
                 </div>
 
                 <div class="hero-panel">
                     <img src="/assets/images/code-neuron-hero-banner.png" alt="The Code Neuron hero banner" />
+                </div>
+            </section>
+
+            <section class="current-projects">
+                <div class="current-projects__header">
+                    <div class="current-projects__tag">Current Focus</div>
+                </div>
+                <div class="current-projects__list">
+                    <article class="project-card">
+                        <h2>Currently Building &amp; Learning</h2>
+                        <p class="project-card__description">The technologies I'm actively learning, building with,
+                            and exploring.</p>
+                        <div class="focus-mini-grid" aria-label="Current focus areas">
+                            <article class="focus-mini-card focus-mini-card--ai">
+                                <div class="focus-mini-card__icon" aria-hidden="true">🤖</div>
+                                <h3>AI</h3>
+                                <p class="focus-mini-card__keywords">Agentic AI • LLMs</p>
+                            </article>
+                            <article class="focus-mini-card focus-mini-card--cloud">
+                                <div class="focus-mini-card__icon" aria-hidden="true">☁</div>
+                                <h3>Cloud</h3>
+                                <p class="focus-mini-card__keywords">AWS • Azure</p>
+                            </article>
+                            <article class="focus-mini-card focus-mini-card--automation">
+                                <div class="focus-mini-card__icon" aria-hidden="true">⚡</div>
+                                <h3>Automation</h3>
+                                <p class="focus-mini-card__keywords">Make • n8n</p>
+                            </article>
+                            <article class="focus-mini-card focus-mini-card--web">
+                                <div class="focus-mini-card__icon" aria-hidden="true">💻</div>
+                                <h3>Modern Web</h3>
+                                <p class="focus-mini-card__keywords">JavaScript • TypeScript • Node</p>
+                            </article>
+                            <article class="focus-mini-card focus-mini-card--enterprise">
+                                <div class="focus-mini-card__icon" aria-hidden="true">☕</div>
+                                <h3>Enterprise Engineering</h3>
+                                <p class="focus-mini-card__keywords">Java • Spring</p>
+                            </article>
+                            <article class="focus-mini-card focus-mini-card--data">
+                                <div class="focus-mini-card__icon" aria-hidden="true">📊</div>
+                                <h3>Data Science</h3>
+                                <p class="focus-mini-card__keywords">ML • AI</p>
+                            </article>
+                        </div>
+                    </article>
                 </div>
             </section>
 
@@ -83,9 +116,11 @@
                         <a class="project-card__link" href="/projects">
                             <h2>EstiMind</h2>
                         </a>
-                        <p class="project-card__description">Don't just estimate stories — capture the intelligence
-                            behind the estimate.</p>
-                        <p class="project-card__status">Coming soon.</p>
+                        <p class="project-card__description">AI-powered story estimation and sprint intelligence for
+                            Agile teams.</p>
+                        <p class="project-card__description">Captures context, confidence, and delivery signals early.
+                        </p>
+                        <p class="project-card__status">⚠ In Development</p>
                     </article>
                 </div>
             </section>
@@ -107,21 +142,6 @@
                 </article>
 
                 <article class="feature-card">
-                    <div class="feature-card__icon feature-card__icon--blog" aria-hidden="true">
-                        <svg class="feature-card__emoji" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                            role="img" aria-label="write" fill="currentColor">
-                            <path
-                                d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.77 3.77 1.81-1.85z" />
-                        </svg>
-                    </div>
-                    <a class="feature-card__content" href="/blog/">
-                        <h3>Blog</h3>
-                        <p>Tutorials, deep dives, and insights on AI, SAP Commerce, cloud, and more.</p>
-                    </a>
-                    <a class="feature-card__cta feature-card__cta--green" href="/blog/">Read Articles →</a>
-                </article>
-
-                <article class="feature-card">
                     <div class="feature-card__icon feature-card__icon--kb" aria-hidden="true">
                         <svg class="feature-card__emoji" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                             role="img" aria-label="book" fill="currentColor">
@@ -129,11 +149,12 @@
                                 d="M3 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13a1 1 0 0 1-1.343.938A5.5 5.5 0 0 0 12 17.5a5.5 5.5 0 0 0-6.657 1.438A1 1 0 0 1 4 19V5z" />
                         </svg>
                     </div>
-                    <a class="feature-card__content" href="/knowledge-base/">
-                        <h3>Knowledge Base</h3>
+                    <a class="feature-card__content" href="/resources/">
+                        <h3>Resources</h3>
                         <p>Curated notes, guides, and cheatsheets from my learning journey.</p>
                     </a>
-                    <a class="feature-card__cta feature-card__cta--orange" href="/knowledge-base/">Explore KB →</a>
+                    <a class="feature-card__cta feature-card__cta--orange" href="/resources/">Explore Resources
+                        →</a>
                 </article>
 
                 <article class="feature-card">
@@ -189,9 +210,13 @@
         </main>
 
         <footer class="footer">
-            <div class="footer-left">© The Code Neuron — Crafted with focus on developer productivity.</div>
+            <div class="footer-left"><strong>Building the future, one line of code at a time.</strong><br />
+                Crafted with curiosity, passion, and a commitment to continuous learning.<br />
+                © <span class="js-current-year">2026</span> Pramod Jondhale
+            </div>
         </footer>
     </div>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

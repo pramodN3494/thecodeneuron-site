@@ -43,7 +43,25 @@ export default async function handler(req, res) {
             })
         });
 
-        const result = await response.json();
+        const responseText = await response.text();
+
+        console.log("========== WEB3FORMS ==========");
+        console.log("Status:", response.status);
+        console.log("Headers:", Object.fromEntries(response.headers.entries()));
+        console.log("Body:");
+        console.log(responseText);
+        console.log("================================");
+
+        let result;
+
+        try {
+            result = JSON.parse(responseText);
+        } catch {
+            return res.status(500).json({
+                success: false,
+                message: "Web3Forms returned HTML instead of JSON."
+            });
+        }
 
         if (response.ok && result.success) {
             return res.status(200).json({

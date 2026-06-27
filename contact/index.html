@@ -80,10 +80,13 @@
                 <div class="contact-right">
                     <article class="contact-form-card" aria-label="Contact form">
                         <h2>Send a Message</h2>
-                        <form id="contact-form" class="contact-form" novalidate>
+                        <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit"
+                            method="POST" novalidate>
+
+                            <input type="hidden" id="access_key" value="5db94019-c473-4c6c-83c7-60d9c9f30a44">
                             <div class="contact-form__field">
                                 <label for="fullName">Full Name <span aria-hidden="true">*</span></label>
-                                <input id="fullName" name="fullName" type="text" placeholder="Enter your full name"
+                                <input id="fullName" name="name" type="text" placeholder="Enter your full name"
                                     required />
                             </div>
 

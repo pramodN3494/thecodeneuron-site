@@ -8,39 +8,21 @@ if (form) {
 
         event.preventDefault();
 
-        const payload = {
-            name: document.getElementById("fullName").value.trim(),
-            email: document.getElementById("email").value.trim(),
-            subject: document.getElementById("subject").value.trim(),
-            message: document.getElementById("message").value.trim()
-        };
-
-        // Basic validation
-        if (!payload.name || !payload.email || !payload.subject || !payload.message) {
-            showToast("⚠️ Please complete all required fields.");
-            return;
-        }
-
         submitButton.disabled = true;
         submitButton.textContent = "Sending...";
 
         try {
 
-            const response = await fetch("/api/contact", {
+            const formData = new FormData(form);
 
+            const response = await fetch(form.action, {
                 method: "POST",
-
-                headers: {
-                    "Content-Type": "application/json"
-                },
-
-                body: JSON.stringify(payload)
-
+                body: formData
             });
 
             const result = await response.json();
 
-            if (response.ok && result.success) {
+            if (result.success) {
 
                 form.reset();
 
@@ -56,9 +38,7 @@ if (form) {
 
             }
 
-        }
-
-        catch (error) {
+        } catch (error) {
 
             console.error(error);
 
@@ -66,9 +46,7 @@ if (form) {
                 "❌ Something went wrong. Please try again later."
             );
 
-        }
-
-        finally {
+        } finally {
 
             submitButton.disabled = false;
             submitButton.textContent = "Send Message";

@@ -1552,6 +1552,12 @@ body {
     color: #fde68a;
 }
 
+.status-pill--live {
+    background: rgba(52, 211, 153, 0.14);
+    border: 1px solid rgba(52, 211, 153, 0.35);
+    color: #a7f3d0;
+}
+
 .status-pill--soon {
     background: rgba(96, 165, 250, 0.14);
     border: 1px solid rgba(96, 165, 250, 0.35);
@@ -1732,38 +1738,99 @@ body {
     margin: 0 0 16px;
 }
 
-.projects-roadmap__grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
+.product-carousel {
+    margin-top: 24px;
+    outline: none;
 }
 
-.projects-roadmap__item {
+.product-carousel:focus-visible {
+    border-radius: 18px;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.18);
+}
+
+.product-carousel__counter {
+    margin: 0 0 12px;
+    color: #a78bfa;
+    font-size: 0.84rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-align: center;
+}
+
+.product-slide {
     border-radius: 18px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     background: rgba(10, 16, 34, 0.92);
-    padding: 18px;
+    padding: 22px;
     transition: transform 250ms ease, border-color 250ms ease, box-shadow 250ms ease;
 }
 
-.projects-roadmap__item:hover {
+.product-slide:hover {
     transform: translateY(-6px);
     border-color: rgba(124, 58, 237, 0.38);
     box-shadow: 0 26px 46px rgba(0, 0, 0, 0.3);
 }
 
-.projects-roadmap__item h3 {
-    margin: 0;
-    font-size: 1.12rem;
+.product-slide__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
 }
 
-.projects-roadmap__item p {
+.product-slide h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.product-slide p {
     margin: 8px 0 12px;
     color: var(--muted);
 }
 
-.projects-roadmap__subtitle-text {
-    margin-bottom: 6px;
+.product-slide .featured-project-card__subtitle {
+    color: #e9e3ff;
+    font-weight: 700;
+}
+
+.product-carousel__controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.product-carousel__control {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid rgba(129, 140, 248, 0.58);
+    border-radius: 999px;
+    background: rgba(12, 20, 46, 0.82);
+    color: #e7e9ff;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.2rem;
+    transition: background 250ms ease, border-color 250ms ease, transform 250ms ease;
+}
+
+.product-carousel__control:hover:not(:disabled) {
+    background: rgba(67, 56, 202, 0.2);
+    border-color: rgba(147, 197, 253, 0.72);
+    transform: translateY(-2px);
+}
+
+.product-carousel__control:focus-visible {
+    outline: 2px solid #a78bfa;
+    outline-offset: 3px;
+}
+
+.product-carousel__control:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
 }
 
 .projects-cta {
@@ -2027,9 +2094,6 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .projects-roadmap__grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
 }
 
 @media (max-width: 620px) {
@@ -2045,8 +2109,14 @@ body {
         gap: 8px;
     }
 
-    .projects-roadmap__grid {
-        grid-template-columns: 1fr;
+    .product-slide {
+        padding: 20px;
+    }
+
+    .product-slide__header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .featured-preview-card {

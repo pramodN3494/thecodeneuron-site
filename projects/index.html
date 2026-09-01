@@ -56,7 +56,7 @@
                         <p class="featured-project-card__description">Structured team estimation with reasoning,
                             confidence signals, AI story breakdowns, and post-reveal insights.</p>
 
-                        <p class="status-pill status-pill--dev">🟡 In Development</p>
+                        <p class="status-pill status-pill--live">MVP Live</p>
 
                         <div class="featured-project-card__badges" aria-label="EstiMind technology stack">
                             <span>React</span>
@@ -68,7 +68,8 @@
                         </div>
 
                         <div class="featured-project-card__actions">
-                            <a class="button" href="https://estimind.thecodeneuron.dev/">Explore EstiMind</a>
+                            <a class="button" href="https://estimind.thecodeneuron.dev/" target="_blank"
+                                rel="noopener noreferrer">Explore EstiMind</a>
                             <a class="button button--secondary" href="/insights/estimind/">Learn More &rarr;</a>
                         </div>
                     </div>
@@ -77,7 +78,7 @@
                         <div class="featured-preview-card">
                             <p class="featured-preview-card__label">Product Preview ↗</p>
                             <a class="featured-preview-card__link" href="https://estimind.thecodeneuron.dev/"
-                                aria-label="View EstiMind application">
+                                aria-label="View EstiMind application" target="_blank" rel="noopener noreferrer">
                                 <div class="featured-preview-card__image-frame">
                                     <img class="featured-preview-card__image"
                                         src="/assets/images/estimind-product-overview.png"
@@ -90,40 +91,30 @@
                 </article>
             </section>
 
-            <section class="projects-roadmap" id="roadmap" aria-label="Project roadmap">
-                <h2 class="section-title">📂 All Projects</h2>
-                <p class="muted projects-roadmap__subtitle">Current and upcoming products I'm building.</p>
-                <div class="projects-roadmap__grid">
-                    <article class="projects-roadmap__item">
-                        <h3>🚀 EstiMind</h3>
-                        <p class="projects-roadmap__subtitle-text">AI-powered Estimation Intelligence Platform</p>
-                        <p>Capture the intelligence behind every estimate.</p>
-                        <span class="status-pill status-pill--dev">🟡 In Development</span>
-                        <div class="featured-project-card__badges" aria-label="EstiMind technology stack">
-                            <span>React</span>
-                            <span>TypeScript</span>
-                            <span>TanStack Start</span>
-                            <span>Lovable Cloud</span>
-                            <span>OpenAI</span>
-                            <span>Vercel</span>
-                        </div>
-                        <div class="featured-project-card__actions">
-                            <a class="button" href="https://estimind.thecodeneuron.dev/">Explore EstiMind</a>
-                        </div>
-                    </article>
-                    <article class="projects-roadmap__item">
-                        <h3>🤖 SEO Audit AI</h3>
-                        <p>Enterprise SEO powered by AI.</p>
-                        <span class="status-pill status-pill--planned">🟣 Coming Soon</span>
-                        <div class="featured-project-card__badges" aria-label="SEO Audit AI technology stack">
-                            <span>OpenAI</span>
-                            <span>Node.js</span>
-                            <span>TypeScript</span>
-                        </div>
-                        <div class="featured-project-card__actions">
-                            <a class="button button--ghost" href="/projects/#roadmap">Coming Soon</a>
-                        </div>
-                    </article>
+            <section class="projects-roadmap product-pipeline" id="roadmap" aria-labelledby="pipeline-title">
+                <h2 class="section-title" id="pipeline-title">Product Pipeline</h2>
+                <p class="muted projects-roadmap__subtitle">Ideas, experiments, and products I'm exploring next.</p>
+                <div class="product-carousel" aria-label="Product Pipeline" tabindex="0">
+                    <p class="product-carousel__counter" aria-live="polite"><span data-carousel-current>01</span> /
+                        <span data-carousel-total>01</span>
+                    </p>
+                    <div class="product-carousel__slides">
+                        <article class="product-slide" aria-label="Product 1 of 1">
+                            <div class="product-slide__header">
+                                <h3>CrawlMind</h3>
+                                <span class="status-pill status-pill--planned">Coming Soon</span>
+                            </div>
+                            <p class="featured-project-card__subtitle">AI-powered SEO Intelligence Platform.</p>
+                            <p class="featured-project-card__description">Don't just audit your site. Understand
+                                what holds it back.</p>
+                        </article>
+                    </div>
+                    <div class="product-carousel__controls">
+                        <button class="product-carousel__control" type="button" data-carousel-previous
+                            aria-label="Previous product" disabled>←</button>
+                        <button class="product-carousel__control" type="button" data-carousel-next
+                            aria-label="Next product" disabled>→</button>
+                    </div>
                 </div>
             </section>
 

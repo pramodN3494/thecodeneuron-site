@@ -1690,6 +1690,19 @@ body {
     transform: translateY(-1px);
 }
 
+.button--secondary {
+    background: rgba(12, 20, 46, 0.82);
+    border: 1px solid rgba(129, 140, 248, 0.58);
+    box-shadow: none;
+    color: #e7e9ff;
+}
+
+.button--secondary:hover {
+    background: rgba(67, 56, 202, 0.2);
+    border-color: rgba(147, 197, 253, 0.72);
+    box-shadow: none;
+}
+
 .featured-project-card__right {
     min-height: 100%;
 }
@@ -1831,6 +1844,224 @@ body {
 .projects-main .button:hover {
     transform: translateY(-2px);
     filter: brightness(1.03);
+}
+
+/* EstiMind insight article */
+.insight-main {
+    max-width: 1000px;
+    margin: 48px auto 0;
+}
+
+.insight-article {
+    padding: 0 24px;
+}
+
+.insight-hero {
+    max-width: 900px;
+    padding: 28px 0 12px;
+}
+
+.insight-eyebrow {
+    margin: 0 0 14px;
+    color: #a78bfa;
+    font-size: 0.84rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.insight-hero h1 {
+    margin: 0;
+    font-size: clamp(2.4rem, 5vw, 4.2rem);
+    line-height: 1.03;
+    letter-spacing: 0;
+    text-wrap: balance;
+}
+
+.insight-lead {
+    max-width: 780px;
+    margin: 24px 0 28px;
+    color: #c7cbdc;
+    font-size: 1.16rem;
+    line-height: 1.8;
+}
+
+.insight-product-image {
+    margin: 48px 0 56px;
+    overflow: hidden;
+    border: 1px solid rgba(167, 139, 250, 0.32);
+    border-radius: 18px;
+    background: var(--surface-strong);
+    box-shadow: var(--shadow);
+}
+
+.insight-product-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.insight-section {
+    margin-top: 52px;
+}
+
+.insight-section h2,
+.insight-cta h2 {
+    margin: 0 0 16px;
+    color: #f4f1ff;
+    font-size: clamp(1.65rem, 3vw, 2.25rem);
+    line-height: 1.15;
+    letter-spacing: 0;
+}
+
+.insight-section h3 {
+    margin: 0 0 10px;
+    font-size: 1.05rem;
+    color: #e8e2ff;
+}
+
+.insight-section p,
+.insight-cta p {
+    color: #b9c0d1;
+    line-height: 1.82;
+}
+
+.insight-section a {
+    color: #b9a9ff;
+}
+
+.insight-section blockquote {
+    margin: 24px 0 0;
+    padding: 18px 20px;
+    border-left: 3px solid #8b5cf6;
+    background: rgba(124, 58, 237, 0.09);
+    color: #e9e5ff;
+    font-size: 1.08rem;
+    line-height: 1.65;
+}
+
+.insight-flow,
+.insight-architecture {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 24px;
+    padding: 20px;
+    border: 1px solid rgba(96, 165, 250, 0.25);
+    border-radius: 14px;
+    background: rgba(8, 17, 42, 0.75);
+}
+
+.insight-flow span,
+.insight-architecture span {
+    padding: 8px 11px;
+    border: 1px solid rgba(129, 140, 248, 0.38);
+    border-radius: 8px;
+    background: rgba(79, 70, 229, 0.12);
+    color: #e2e8ff;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.insight-flow b,
+.insight-architecture b {
+    color: #8b9cff;
+}
+
+.insight-flow--vertical,
+.insight-architecture {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.insight-flow--model span,
+.insight-architecture span {
+    min-width: min(100%, 300px);
+}
+
+.insight-architecture small {
+    color: var(--muted);
+}
+
+.insight-callout {
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(167, 139, 250, 0.28);
+    background: rgba(124, 58, 237, 0.1);
+}
+
+.insight-callout p {
+    margin: 4px 0;
+}
+
+.insight-role-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.insight-role-grid section {
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 12px;
+    background: rgba(8, 17, 42, 0.64);
+}
+
+.insight-role-grid p {
+    margin: 0;
+    font-size: 0.94rem;
+}
+
+.insight-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.insight-tech-stack span {
+    padding: 8px 11px;
+    border: 1px solid rgba(96, 165, 250, 0.32);
+    border-radius: 999px;
+    background: rgba(59, 130, 246, 0.11);
+    color: #dbeafe;
+    font-size: 0.86rem;
+    font-weight: 700;
+}
+
+.insight-cta {
+    margin-top: 64px;
+    padding: 36px;
+    border: 1px solid rgba(167, 139, 250, 0.32);
+    border-radius: 18px;
+    background: linear-gradient(145deg, rgba(67, 56, 202, 0.22), rgba(8, 17, 42, 0.88));
+}
+
+.insight-cta p {
+    max-width: 680px;
+}
+
+@media (max-width: 720px) {
+    .insight-main {
+        margin-top: 28px;
+    }
+
+    .insight-article {
+        padding: 0;
+    }
+
+    .insight-hero h1 {
+        font-size: 2.35rem;
+    }
+
+    .insight-role-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .insight-cta {
+        padding: 26px 20px;
+    }
 }
 
 @media (max-width: 1024px) {

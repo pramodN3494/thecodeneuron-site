@@ -851,59 +851,30 @@ body {
     background: linear-gradient(110deg, rgba(124, 58, 237, 0.2), rgba(56, 189, 248, 0.08) 42%, rgba(30, 41, 59, 0.16));
 }
 
-.about-replica__focus .focus-mini-grid {
+.about-capabilities {
     margin-top: 24px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
-    justify-content: stretch;
-    grid-auto-rows: 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 32px;
+    row-gap: 0;
 }
 
-.about-replica__focus .focus-mini-card {
-    min-height: 170px;
-    height: 100%;
-    aspect-ratio: auto;
-    transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
-    animation: about-card-rise 420ms ease both;
+.about-capability {
+    padding: 20px 0;
+    border-top: 1px solid rgba(148, 163, 184, 0.18);
 }
 
-.about-replica__focus .focus-mini-card:nth-child(1) {
-    animation-delay: 50ms;
+.about-capability h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.04rem;
+    line-height: 1.25;
 }
 
-.about-replica__focus .focus-mini-card:nth-child(2) {
-    animation-delay: 100ms;
-}
-
-.about-replica__focus .focus-mini-card:nth-child(3) {
-    animation-delay: 150ms;
-}
-
-.about-replica__focus .focus-mini-card:nth-child(4) {
-    animation-delay: 200ms;
-}
-
-.about-replica__focus .focus-mini-card:nth-child(5) {
-    animation-delay: 250ms;
-}
-
-.about-replica__focus .focus-mini-card:nth-child(6) {
-    animation-delay: 300ms;
-}
-
-.about-replica__focus .focus-mini-card:hover {
-    transform: translateY(-6px);
-    border-color: rgba(124, 58, 237, 0.42);
-    box-shadow: 0 22px 40px rgba(0, 0, 0, 0.28);
-}
-
-.about-replica__focus .focus-mini-card:hover .focus-mini-card__icon {
-    transform: scale(1.1);
-    filter: brightness(1.15);
-}
-
-.about-replica__focus .focus-mini-card__keywords {
-    margin-top: 12px;
+.about-capability p {
+    margin: 8px 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
     line-height: 1.6;
 }
 
@@ -1297,18 +1268,6 @@ body {
     margin-top: 22px;
 }
 
-@keyframes about-card-rise {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 @media (max-width: 1160px) {
     .feature-cards {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1356,8 +1315,8 @@ body {
         font-size: 1.05rem;
     }
 
-    .about-replica__focus .focus-mini-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .about-capabilities {
+        column-gap: 24px;
     }
 }
 
@@ -1390,13 +1349,8 @@ body {
         margin-top: 28px;
     }
 
-    .about-replica__focus .focus-mini-grid {
+    .about-capabilities {
         grid-template-columns: 1fr;
-        gap: 14px;
-    }
-
-    .about-replica__focus .focus-mini-card {
-        min-height: 170px;
     }
 
     .about-replica__quote--closing {

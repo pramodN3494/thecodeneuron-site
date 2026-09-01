@@ -164,7 +164,8 @@
                         <strong>in_progress</strong>,
                         and <strong>completed</strong>. Six-character join codes expire, can be rotated, and are
                         invalidated on completion. Presence can show active, disconnected, or left; reconnecting
-                        participants can reuse their session identity while their historical votes remain preserved.</p>
+                        participants can reuse their session identity while their historical votes remain preserved.
+                    </p>
                 </section>
 
                 <section class="insight-section">
@@ -199,7 +200,8 @@
                     <p>The server-side provider abstraction uses the OpenAI Responses API, with
                         <strong>gpt-5.6-sol</strong>
                         as the current default model. It powers AI Story Breakdown and AI Estimation Insights; if an
-                        AI request fails, estimation can continue. Credentials stay server-side.</p>
+                        AI request fails, estimation can continue. Credentials stay server-side.
+                    </p>
                     <p>Security is not UI-only: Supabase Auth, Row Level Security, backend authorization, and project
                         membership enforcement protect organization data. Disabled members are blocked at the database
                         layer, while anonymous participants receive access only for the session they join.</p>

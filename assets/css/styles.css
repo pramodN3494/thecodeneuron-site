@@ -428,6 +428,10 @@ body {
     border-top-color: #34d399;
 }
 
+.focus-mini-card--fde {
+    border-top-color: #f472b6;
+}
+
 .focus-mini-card--ai:hover {
     border-color: rgba(139, 92, 246, 0.52);
     box-shadow: 0 20px 36px rgba(139, 92, 246, 0.16);
@@ -456,6 +460,11 @@ body {
 .focus-mini-card--data:hover {
     border-color: rgba(52, 211, 153, 0.52);
     box-shadow: 0 20px 36px rgba(52, 211, 153, 0.16);
+}
+
+.focus-mini-card--fde:hover {
+    border-color: rgba(244, 114, 182, 0.52);
+    box-shadow: 0 20px 36px rgba(244, 114, 182, 0.16);
 }
 
 .hero-actions .primary {
